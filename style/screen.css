@@ -1,0 +1,648 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    
+}
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+/*header*/
+.image, .navigation {
+    display: none;
+}
+.w100 .logo {
+    padding-right: 34%;
+    width: 50%;
+    float: right;
+    height: 100px;
+} 
+.w100 .logo img {
+    width: 160px;
+}
+.w100 .bg-menu {
+    width: 50%;
+    float: left;
+}
+
+/* slider */
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+div.slider {
+    overflow: hidden;
+    padding-top: 3%;
+    position: relative;
+    width: 100%;
+}
+.slider h2 {
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 24px;
+}
+div.slider figure img {
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+
+div.slider figure {
+    position: relative;
+    width: 500%;
+    animation: 20s slidy infinite;
+}
+/* filtre */
+.filtre article {
+        width: 50%;
+        float: left;
+        padding-left: 2%;
+        padding-top: 5%;
+    }
+    .filtre figure {
+        position: relative;
+    }
+    .filtre figcaption {
+        position: relative;
+    }
+    .filtre figcaption h3 {
+        position: absolute;
+        top: 0;
+    }
+    .filtre figure img {
+        width: 90%;
+        height: 100px;
+    }   
+    .filtre figcaption {
+        text-align: inherit;
+    }
+    .filtre figcaption img {
+        width: 10%;
+    }
+.nouveaute h2 {
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 24px;
+}
+.nouveaute article {
+    padding-left: 20%;
+    padding-top: 5%;
+}
+.nouveaute article figure img {
+    width: 70%;
+    height: 240px;
+}
+.nouveaute article figcaption a {
+    padding-left: 40%;
+    color: #5A286C;
+}
+/*article*/
+.portfolio-container,
+.portfolio-list {
+    width: 100%;
+}
+
+.portfolio-list {
+    margin: 0;
+    list-style: none;
+}
+
+.portfolio-list li {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.portfolio-list li figcaption h3 {
+    position: absolute;
+    top: 45%;
+    font-size: 16px;
+    text-transform: uppercase;
+    right: 10%;
+    color: #000;
+}
+.portfolio-list li figcaption img {
+    position: absolute;
+    width: 20%;
+    top: 5%;
+}
+.portfolio-list li img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+}
+/*
+.portfolio-container,
+.portfolio-list {
+    width: 100%;
+}
+
+.portfolio-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-list li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 33.3%;
+}
+
+.portfolio-list li img {
+    display: block;
+    width: 100%;
+    margin: 0;
+}*/
+
+
+.article h2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 24px;
+}
+.article article {
+    padding-left: 20%;
+    padding-top: 5%;
+}
+.article article figure img {
+    width: 70%;
+    height: 240px;
+}
+.article article figcaption a {
+    padding-left: 40%;
+    color: #5A286C;
+}
+
+/*---------------- footer ---------------*/
+footer {
+    margin-top: 3%;
+    padding-top: 3%;
+    background: #000;
+}
+footer .foo {
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+footer .foo div {
+    float: left;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+footer .foo div a {
+    display: block;
+    padding-top: 2%;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .foo div:last-child a {
+    display: inline;
+}
+footer .foo div:last-child a img {
+    width: 20%;
+}
+footer .foo div:last-child a .facebook {
+    width: 10%;
+}
+footer .foo div:last-child a .twitter {
+    width: 30%;
+}
+
+
+/*---------------- colonnes ---------------*/
+
+.w5 {
+    width: 5%;
+}
+
+.w10 {
+    width: 10%;
+}
+
+.w15 {
+    width: 15%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+@media screen and (min-width: 600px) {
+    body {
+        
+    }
+    .filtre article {
+        width: 50%;
+        float: left;
+        padding-left: 2%;
+        padding-top: 5%;
+    }
+    .filtre figure img {
+        width: 95%;
+        height: 250px;
+    }   
+    .filtre figcaption {
+        text-align: inherit;
+    }
+    .filtre figcaption h3 {
+        width: 70%;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .filtre figcaption span {
+        font-size: 16px;
+        color: #5A286C;
+    }
+    /* nouveaute */
+
+    .nouveaute h2 {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .nouveaute .nouv {
+        border-right: inherit;
+        width: 50%;
+        float: left;
+    }
+    .nouveaute .right {
+        float: right;
+        width: 50%;
+    }
+    .nouveaute article {
+        padding-left: 2%;
+        padding-top: 0;
+    }
+    .nouveaute article figure {
+        padding-left: 10%;
+    }
+    
+    .nouveaute article figcaption a {
+        padding-left: 55%;
+    }
+    .nouveaute .nou {
+        display: none;
+    }
+
+    .nouveaute .nouv figure img {
+        width: 80%;
+        height: 180px;
+    }
+    .nouveaute .right figure img {
+        width: 65%;
+        height: 180px;
+    }
+    .nouveaute figcaption a {
+        color: #5A286C;
+    }
+    /*article */
+    .article h2 {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .article .actus {
+        border-right: inherit;
+        width: 50%;
+        float: left;
+    }
+    .article .actus figure img {
+        width: 100%;
+        height: 180px;
+    }
+    .article article {
+        padding-left: 4%;
+        padding-top: 0;
+    }
+    .article article figure {
+        padding-left: 10%;
+    }
+    
+    .article article figcaption a {
+        padding-left: 55%;
+    }
+
+    .article figure img {
+        width: 80%;
+        height: 180px;
+    }
+    .article figure img {
+        width: 65%;
+        height: 180px;
+    }
+    .article figcaption a {
+        color: #5A286C;
+    }
+
+    .portfolio-container,
+.portfolio-list {
+    width: 100%;
+}
+
+.portfolio-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-list li {
+    padding-left: 2%;
+    position: relative;
+    display: block;
+    float: left;
+    width: 49%;
+}
+
+.portfolio-list li img {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        margin: 0 auto;
+    }
+    main {
+        max-width: 1200px;
+    }
+    header {
+        padding-top: 1%;
+    }
+    
+    .image, .navigation {
+        display: block;
+    }
+    .w100 .logo {
+        width: 25%;
+        height: 100px;
+    }
+    .w100 .w10 {
+        width: 46%;
+        float: left;
+    }
+    .w100 .image {
+        float: right;
+        width: 54%;
+    }
+    .image li {
+        display: inline-block;
+        margin: 0 9%;
+    }
+    .image img {
+        text-decoration: none;
+    }
+    .w100 .navigation {
+        float: right;
+        width: 54%;
+    }
+    .navigation li {
+        display: inline-block;
+        margin: 0 7%;
+    }
+    .navigation li a {
+        color: #5A286C;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .bg-menu {
+        display: none;
+    }
+
+    .slider {
+        width: 100%;
+    }
+    /*filtre*/
+    .filtre {
+        display: block;
+    }
+    .filtre article {
+        float: left;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    .filtre figure img {
+        width: 90%;
+        height: 350px;
+    }   
+    .filtre figcaption {
+        text-align: center;
+    }
+    .filtre figcaption h3 {
+        width: 98%;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .filtre figcaption a {
+        font-size: 16px;
+        color: #5A286C;
+    }
+    /* nouveaute */
+
+    .nouveaute h2 {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .nouveaute article {
+        padding-left: 3%;
+        padding-top: 0;
+    } 
+    .nouveaute .nouv {
+        border-right: solid 2px #5A286C;
+        width: 33%;
+        float: left;
+    }
+    .nouveaute .right {
+        border-right: solid 2px #5A286C;
+        width: 33%;
+        float: left;
+    }
+    .nouveaute .nou {
+        border-right: inherit;
+        width: 33%;
+        float: left;
+    }
+    
+    .nouveaute article figcaption a {
+        padding-left: 55%;
+    }
+    .nouveaute .nou {
+        display: block;
+    }
+
+    .nouveaute .nouv figure img {
+        width: 90%;
+        height: 180px;
+    }
+    .nouveaute .right figure img {
+        width: 90%;
+        height: 180px;
+    }
+    .nouveaute .nou figure {
+        padding-left: 10%;
+    }
+    .nouveaute .nou figure img {
+        width: 210px;
+        height: 185px;
+    }
+    .nouveaute figcaption a {
+        color: #5A286C;
+    }
+    
+    /*article*/
+    .article h2 {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .article article {
+        padding-left: 3%;
+        padding-top: 2%;
+    } 
+    .article .actus {
+    
+        width: 33%;
+        float: left;
+    }
+    
+    .article article figcaption a {
+        padding-left: 55%;
+    }
+
+    .article .actus figure img {
+        width: 80%;
+        height: 180px;
+    }
+    
+    .article figcaption a {
+        color: #5A286C;
+    }
+
+.portfolio-container,
+.portfolio-list {
+    width: 100%;
+}
+
+.portfolio-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-list li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 32.5%;
+}
+
+.portfolio-list li img {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+    /*---------------- footer ---------------*/
+
+    footer {
+        background: #000;
+        width: 100%;
+    }
+
+    footer .foo {
+        width: 100%;
+        margin: 0 auto;
+        height: 100px;
+    }
+
+    footer .foo div {
+        float: left;
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+
+    footer .foo div a {
+        display: block;
+        padding-top: 2%;
+        text-align: left;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer .foo div:last-child a {
+        display: inline;
+    }
+
+
+}
+
