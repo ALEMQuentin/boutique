@@ -23,12 +23,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: purple;
+    
 }
 main {
     max-width: 600px;
@@ -96,6 +91,7 @@ div.slider {
 }
 div.slider figure img {
     width: 20%;
+    height: 500px;
     float: left;
 }
 
@@ -185,31 +181,6 @@ div.slider figure {
     height: 150px;
     margin: 0;
 }
-/*
-.portfolio-container,
-.portfolio-list {
-    width: 100%;
-}
-
-.portfolio-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.portfolio-list li {
-    position: relative;
-    display: block;
-    float: left;
-    width: 33.3%;
-}
-
-.portfolio-list li img {
-    display: block;
-    width: 100%;
-    margin: 0;
-}*/
-
 
 .article h2 {
     padding-top: 3%;
@@ -223,12 +194,68 @@ div.slider figure {
 }
 .article article figure img {
     width: 70%;
+    height: 240px;
 }
 .article article figcaption a {
     padding-left: 40%;
     color: #5A286C;
 }
 
+/* produit */
+.produit h2 {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 24px;
+}
+.produit figure {
+    margin-left: 20%;
+}
+.produit figure img {
+    width: 65%;
+}
+
+.produit figcaption input {
+    margin-left: 3%;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+.produit figcaption label {
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.produit figcaption h3 {
+    color: #5A286C;
+    font-size: 25PX;
+    text-align: right;
+    padding-right: 30%;
+}
+
+.produit figcaption p {
+    padding-bottom: 10%;
+    padding-top: 8%;
+    text-align: left;
+    padding-left: 15%;
+}
+
+.produit figcaption span {
+    color: #fff;
+    border-radius: 5Px;
+    margin-left: 30%;
+    background: #5A286C;
+    padding: 10px 20px;
+}
+.complementaire h2 {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 24PX;
+}
+.complementaire article figure img {
+    width: 75%;
+}
 /*---------------- footer ---------------*/
 footer {
     margin-top: 3%;
@@ -259,10 +286,14 @@ footer .foo div:last-child a {
     display: inline;
 }
 footer .foo div:last-child a img {
-    width: 30%;
-    display: inline-block;
+    width: 20%;
 }
-
+footer .foo div:last-child a .facebook {
+    width: 10%;
+}
+footer .foo div:last-child a .twitter {
+    width: 30%;
+}
 
 
 /*---------------- colonnes ---------------*/
@@ -296,7 +327,10 @@ footer .foo div:last-child a img {
 }
 @media screen and (min-width: 600px) {
     body {
-        
+      
+    }
+    main {
+        max-width: 1000px;
     }
     .filtre article {
         width: 50%;
@@ -424,11 +458,77 @@ footer .foo div:last-child a img {
     display: block;
     width: 100%;
     margin: 0;
+    }
+
+    /* liste*/
+.produit h2 {
+    padding-bottom: 2%;
+    text-align: center;
 }
+.produit figure {
+    margin-left: 0;
+    float: left;
+    width: 40%;
+}
+.produit figure img {
+    margin-left: 25%;
+}
+.produit figcaption {
+    float: right;
+    width: 60%;
+}
+.produit figcaption p {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    text-align: right;
+    padding-right: 20%;
+    width: 90%;
+}
+.produit figcaption h3 {
+    color: #5A286C;
+    font-size: 24PX;
+    text-align: right;
+    padding-right: 30%;
+}
+.produit figcaption input {
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+.produit figcaption label {
+    display: inline-block;
+    margin-top: 3%;
+    margin-right: 2%;
+    margin-left: 30%;
+}
+.produit figcaption span {
+    color: #fff;
+    border-radius: 5Px;
+    margin-left: 10%;
+    background: #5A286C;
+    padding: 10px 20px;
+}
+.complementaire h2 {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 24PX;
+}
+.complementaire article {
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+}
+
+.complementaire article figure img {
+    width: 75%;
+}
+
 }
 
 @media screen and (min-width: 1000px) {
     body {
+       
         margin: 0 auto;
     }
     main {
@@ -491,6 +591,7 @@ footer .foo div:last-child a img {
     }
     .filtre figure img {
         width: 90%;
+        height: 350px;
     }   
     .filtre figcaption {
         text-align: center;
@@ -609,6 +710,66 @@ footer .foo div:last-child a img {
     width: 100%;
     margin: 0;
 }
+/* liste*/
+.produit h2 {
+    padding-bottom: 3%;
+    text-align: center;
+}
+.produit figure {
+    margin-left: 0;
+    float: left;
+    width: 50%;
+}
+.produit figure img {
+    width: 60%;
+}
+.produit figcaption {
+    float: right;
+    width: 50%;
+}
+.produit figcaption p {
+    padding-bottom: 5%;
+    padding-top: 3%;
+    text-align: right;
+}
+.produit figcaption h3 {
+    color: #5A286C;
+    font-size: 24PX;
+    text-align: right;
+    padding-right: 20%;
+}
+.produit figcaption input {
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+.produit figcaption label {
+    display: inline-block;
+    margin-top: 3%;
+    margin-right: 2%;
+}
+.produit figcaption span {
+    color: #fff;
+    border-radius: 5Px;
+    margin-left: 30%;
+    background: #5A286C;
+    padding: 10px 20px;
+}
+.complementaire h2 {
+    text-align: center;
+    font-size: 24PX;
+}
+.complementaire article {
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+}
+
+.complementaire article figure img {
+    width: 65%;
+}
+
 
     /*---------------- footer ---------------*/
 
