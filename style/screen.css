@@ -2,805 +2,1033 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 body {
-    
+	font-family: roboto;
 }
+
+a {
+	text-decoration: none;
+}
+
 main {
-    max-width: 600px;
-    margin: 0 auto;
+	max-width: 600px;
+	margin: 0 auto;
 }
 /*header*/
 .image, .navigation {
-    display: none;
+	display: none;
 }
 .w100 .logo {
-    padding-right: 34%;
-    width: 50%;
-    float: right;
-    height: 100px;
+	padding-right: 30%;
+	width: 50%;
+	float: right;
+	height: 100px;
 } 
 .w100 .logo img {
-    width: 160px;
+	width: 190px;
 }
 .w100 .bg-menu {
-    width: 50%;
-    float: left;
+	width: 50%;
+	float: left;
 }
 
 /* slider */
 @keyframes slidy {
-    0% {
-        left: 0%;
-    }
-    20% {
-        left: 0%;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
+	0% {
+		left: 0%;
+	}
+	20% {
+		left: 0%;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
 }
 
 div.slider {
-    overflow: hidden;
-    padding-top: 3%;
-    position: relative;
-    width: 100%;
+	overflow: hidden;
+	padding-top: 3%;
+	position: relative;
+	width: 100%;
 }
 .slider h2 {
-    padding-bottom: 2%;
-    text-align: center;
-    font-size: 24px;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 24px;
 }
 div.slider figure img {
-    width: 20%;
-    height: 500px;
-    float: left;
+	width: 20%;
+	float: left;
 }
 
 div.slider figure {
-    position: relative;
-    width: 500%;
-    animation: 20s slidy infinite;
+	position: relative;
+	width: 500%;
+	animation: 20s slidy infinite;
 }
 /* filtre */
 .filtre article {
-        width: 50%;
-        float: left;
-        padding-left: 2%;
-        padding-top: 5%;
-    }
-    .filtre figure {
-        position: relative;
-    }
-    .filtre figcaption {
-        position: relative;
-    }
-    .filtre figcaption h3 {
-        position: absolute;
-        top: 0;
-    }
-    .filtre figure img {
-        width: 90%;
-        height: 100px;
-    }   
-    .filtre figcaption {
-        text-align: inherit;
-    }
-    .filtre figcaption img {
-        width: 10%;
-    }
+		width: 50%;
+		float: left;
+		padding-left: 2%;
+		padding-top: 5%;
+	}
+	.filtre figure {
+		position: relative;
+	}
+	.filtre figcaption {
+		position: relative;
+	}
+	.filtre figcaption h3 {
+		position: absolute;
+		top: 0;
+	}
+	.filtre figure img {
+		width: 90%;
+		height: 100px;
+	}   
+	.filtre figcaption {
+		text-align: inherit;
+	}
+	.filtre figcaption img {
+		width: 10%;
+	}
 .nouveaute h2 {
-    padding-bottom: 3%;
-    text-align: center;
-    font-size: 24px;
+	padding-bottom: 3%;
+	text-align: center;
+	font-size: 24px;
 }
 .nouveaute article {
-    padding-left: 20%;
-    padding-top: 5%;
+	padding-left: 20%;
+	padding-top: 5%;
 }
 .nouveaute article figure img {
-    width: 70%;
-    height: 240px;
+	width: 70%;
+	height: 240px;
 }
 .nouveaute article figcaption a {
-    padding-left: 40%;
-    color: #5A286C;
+	padding-left: 40%;
+	color: #5A286C;
 }
 /*article*/
 .portfolio-container,
 .portfolio-list {
-    width: 100%;
+	width: 100%;
 }
 
 .portfolio-list {
-    margin: 0;
-    list-style: none;
+	margin: 0;
+	list-style: none;
 }
 
 .portfolio-list li {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding-top: 2%;
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-top: 2%;
 }
 
 .portfolio-list li figcaption h3 {
-    position: absolute;
-    top: 45%;
-    font-size: 16px;
-    text-transform: uppercase;
-    right: 10%;
-    color: #000;
+	position: absolute;
+	top: 45%;
+	font-size: 16px;
+	text-transform: uppercase;
+	right: 10%;
+	color: #fff;
 }
 .portfolio-list li figcaption img {
-    position: absolute;
-    width: 20%;
-    top: 5%;
+	position: absolute;
+	width: 20%;
+	top: 5%;
 }
 .portfolio-list li img {
-    display: block;
-    width: 100%;
-    height: 150px;
-    margin: 0;
+	display: block;
+	width: 100%;
+	height: 150px;
+	margin: 0;
 }
 
 .article h2 {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: center;
-    font-size: 24px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	font-size: 24px;
 }
 .article article {
-    padding-left: 20%;
-    padding-top: 5%;
+	padding-left: 20%;
+	padding-top: 5%;
 }
 .article article figure img {
-    width: 70%;
-    height: 240px;
+	height: 240px;
 }
 .article article figcaption a {
-    padding-left: 40%;
-    color: #5A286C;
+	padding-left: 40%;
+	color: #5A286C;
 }
 
 /* produit */
 .produit h2 {
-    padding-top: 3%;
-    text-align: center;
-    font-size: 24px;
+	padding-top: 3%;
+	text-align: center;
+	font-size: 24px;
 }
 .produit figure {
-    margin-left: 20%;
+	margin-left: 20%;
 }
 .produit figure img {
-    width: 65%;
+	width: 65%;
 }
 
 .produit figcaption input {
-    margin-left: 3%;
-    border: solid 1px grey;
-    border-radius: 5px;
-    padding: 5px 10px;
+	margin-left: 3%;
+	border: solid 1px grey;
+	border-radius: 5px;
+	padding: 5px 10px;
 
 }
 .produit figcaption label {
-    display: inline-block;
-    margin-top: 3%;
-    margin-left: 15%;
+	display: inline-block;
+	margin-top: 3%;
+	margin-left: 15%;
 }
 
 .produit figcaption h3 {
-    color: #5A286C;
-    font-size: 25PX;
-    text-align: right;
-    padding-right: 30%;
+	color: #5A286C;
+	font-size: 25PX;
+	text-align: right;
+	padding-right: 30%;
 }
 
 .produit figcaption p {
-    padding-bottom: 10%;
-    padding-top: 8%;
-    text-align: left;
-    padding-left: 15%;
+	padding-bottom: 10%;
+	padding-top: 8%;
+	text-align: left;
+	padding-left: 15%;
 }
 
 .produit figcaption span {
-    color: #fff;
-    border-radius: 5Px;
-    margin-left: 30%;
-    background: #5A286C;
-    padding: 10px 20px;
+	color: #fff;
+	border-radius: 5Px;
+	margin-left: 30%;
+	background: #5A286C;
+	padding: 10px 20px;
 }
 .complementaire h2 {
-    padding-top: 5%;
-    text-align: center;
-    font-size: 24PX;
+	padding-top: 5%;
+	text-align: center;
+	font-size: 24PX;
 }
 .complementaire article figure img {
-    width: 75%;
+	width: 75%;
+}
+
+/* panier*/
+.commande {
+	margin-left: 5%;
+}
+.commande h2 {
+	text-align: center;
+	font-size: 24px;
+}
+.commande article {
+	padding-top: 4%;
+}
+.com .qte {
+float: left;
+margin-top: 5%;
+margin-right: 10%;
+}
+.com span {
+	float: right;
+}
+.com ul li {
+	width: 60%;
+	list-style: none;
+	float: none;
+}
+.com ul li h3 {
+	padding-top: 5%;
+}
+.com ul li img {
+	width: 80%;
+	padding-top: 0;
+}
+.com p {
+	font-size: 18px;
+	
+}
+.recapitulatif {
+	padding-bottom: 5%;
+}
+.recapitulatif h2 {
+	text-align: center;
+	font-size: 24px;
+}
+.recapitulatif .recap {
+	width: 100%;
+	padding-top: 3%;
+	padding-left: 20%;
+}
+.recap .recap-nom {
+	float: left;
+	text-transform: uppercase;
+	width: 50%;
+}
+.recap .recap-chiffre {
+	float: right;
+	width: 50%;
+	padding-right: 25%;
+	text-align: right;
+}
+.recap .recap-chiffre li {
+	padding-top: 14%;
+}
+.recap li {
+	padding-top: 7%;
+	list-style: none;
+}
+.recapitulatif span {
+	padding: 10px 20px;
+	background: #5A286C;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.recapitulatif .btn {
+	width: 80%;
+	padding-left: 33%;
+	padding-top: 39%;
+}
+.recap .recap-chiffre {
+	float: right;
+	width: 50%;
+	padding-right: 25%;
+	text-align: right;
+}
+
+/* formulaire */
+.formulaire {
+	padding-bottom: 10%;
+}
+.form {
+	padding-top: 5%;
+	padding-left: 30%;
+}
+.form input {
+	display: block;
+	padding: 10px 10px;
+	margin-top: 3%;
+}
+.formulaire .btn {
+	padding-top: 10%;
+}
+.formulaire span {
+	margin-left: 35%;
+	background: #5A286C;
+	padding: 10px 30px;
+	border-radius: 5px;
+}
+.formulaire a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
 }
 /*---------------- footer ---------------*/
 footer {
-    margin-top: 3%;
-    padding-top: 3%;
-    background: #000;
+	margin-top: 3%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background: #000;
 }
 footer .foo {
-    width: 100%;
-    margin: 0 auto;
-    height: 100px;
+	width: 100%;
+	margin: 0 auto;
+	height: 100px;
 }
 
 footer .foo div {
-    float: left;
-    margin-left: 10%;
-    margin-top: 1%;
+	float: left;
+	margin-left: 10%;
+	margin-top: 1%;
 }
 
 footer .foo div a {
-    display: block;
-    padding-top: 2%;
-    text-align: left;
-    color: #fff;
-    text-decoration: none;
+	display: block;
+	padding-top: 2%;
+	text-align: left;
+	color: #fff;
+	text-decoration: none;
 }
 
 footer .foo div:last-child a {
-    display: inline;
+	display: inline;
 }
 footer .foo div:last-child a img {
-    width: 20%;
+	width: 20%;
 }
-footer .foo div:last-child a .facebook {
-    width: 10%;
-}
-footer .foo div:last-child a .twitter {
-    width: 30%;
-}
+
 
 
 /*---------------- colonnes ---------------*/
 
 .w5 {
-    width: 5%;
+	width: 5%;
 }
 
 .w10 {
-    width: 10%;
+	width: 10%;
 }
 
 .w15 {
-    width: 15%;
+	width: 15%;
 }
 
 .w20 {
-    width: 20%;
+	width: 20%;
 }
 
 .w40 {
-    width: 40%;
+	width: 40%;
 }
 
 .w50 {
-    width: 50%;
+	width: 50%;
 }
 
 .w100 {
-    width: 100%;
+	width: 100%;
 }
 @media screen and (min-width: 600px) {
-    body {
-      
-    }
-    main {
-        max-width: 1000px;
-    }
-    .filtre article {
-        width: 50%;
-        float: left;
-        padding-left: 2%;
-        padding-top: 5%;
-    }
-    .filtre figure img {
-        width: 95%;
-        height: 250px;
-    }   
-    .filtre figcaption {
-        text-align: inherit;
-    }
-    .filtre figcaption h3 {
-        width: 70%;
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-    .filtre figcaption span {
-        font-size: 16px;
-        color: #5A286C;
-    }
-    /* nouveaute */
+	body {
+	 
+	}
+	main {
+		max-width: 1000px;
+	}
+	.filtre article {
+		width: 50%;
+		float: left;
+		padding-left: 2%;
+		padding-top: 5%;
+	}
+	.filtre figure img {
+		width: 95%;
+		height: 250px;
+	}   
+	.filtre figcaption {
+		text-align: inherit;
+	}
+	.filtre figcaption h3 {
+		width: 70%;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+	.filtre figcaption span {
+		font-size: 16px;
+		color: #5A286C;
+	}
+	/* nouveaute */
 
-    .nouveaute h2 {
-        padding-top: 3%;
-        text-align: center;
-        font-size: 24px;
-    }
-    .nouveaute .nouv {
-        border-right: inherit;
-        width: 50%;
-        float: left;
-    }
-    .nouveaute .right {
-        float: right;
-        width: 50%;
-    }
-    .nouveaute article {
-        padding-left: 2%;
-        padding-top: 0;
-    }
-    .nouveaute article figure {
-        padding-left: 10%;
-    }
-    
-    .nouveaute article figcaption a {
-        padding-left: 55%;
-    }
-    .nouveaute .nou {
-        display: none;
-    }
+	.nouveaute h2 {
+		padding-top: 3%;
+		text-align: center;
+		font-size: 24px;
+	}
+	.nouveaute .nouv {
+		border-right: inherit;
+		width: 50%;
+		float: left;
+	}
+	.nouveaute .right {
+		float: right;
+		width: 50%;
+	}
+	.nouveaute article {
+		padding-left: 2%;
+		padding-top: 0;
+	}
+	.nouveaute article figure {
+		padding-left: 10%;
+	}
+	
+	.nouveaute article figcaption a {
+		padding-left: 55%;
+	}
+	.nouveaute .nou {
+		display: none;
+	}
 
-    .nouveaute .nouv figure img {
-        width: 80%;
-        height: 180px;
-    }
-    .nouveaute .right figure img {
-        width: 65%;
-        height: 180px;
-    }
-    .nouveaute figcaption a {
-        color: #5A286C;
-    }
-    /*article */
-    .article h2 {
-        padding-top: 3%;
-        text-align: center;
-        font-size: 24px;
-    }
-    .article .actus {
-        border-right: inherit;
-        width: 50%;
-        float: left;
-    }
-    .article .actus figure img {
-        width: 100%;
-        height: 180px;
-    }
-    .article article {
-        padding-left: 4%;
-        padding-top: 0;
-    }
-    .article article figure {
-        padding-left: 10%;
-    }
-    
-    .article article figcaption a {
-        padding-left: 55%;
-    }
+	.nouveaute .nouv figure img {
+		width: 80%;
+		height: 180px;
+	}
+	.nouveaute .right figure img {
+		width: 65%;
+		height: 180px;
+	}
+	.nouveaute figcaption a {
+		color: #5A286C;
+	}
+	/*article */
+	.article h2 {
+		padding-top: 3%;
+		text-align: center;
+		font-size: 24px;
+	}
+	.article .actus {
+		border-right: inherit;
+		width: 50%;
+		float: left;
+	}
+	.article .actus figure img {
+		height: 180px;
+	}
+	.article article {
+		padding-left: 4%;
+		padding-top: 0;
+	}
+	.article article figure {
+		padding-left: 10%;
+	}
+	
+	.article article figcaption a {
+		padding-left: 55%;
+	}
 
-    .article figure img {
-        width: 80%;
-        height: 180px;
-    }
-    .article figure img {
-        width: 65%;
-        height: 180px;
-    }
-    .article figcaption a {
-        color: #5A286C;
-    }
+	.article figure img {
+		height: 180px;
+	}
+	.article figure img {
+		height: 180px;
+	}
+	.article figcaption a {
+		color: #5A286C;
+	}
 
-    .portfolio-container,
+	.portfolio-container,
 .portfolio-list {
-    width: 100%;
+	width: 100%;
 }
 
 .portfolio-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .portfolio-list li {
-    padding-left: 2%;
-    position: relative;
-    display: block;
-    float: left;
-    width: 49%;
+	padding-left: 2%;
+	position: relative;
+	display: block;
+	float: left;
+	width: 49%;
 }
 
 .portfolio-list li img {
-    display: block;
-    width: 100%;
-    margin: 0;
-    }
+	display: block;
+	width: 100%;
+	margin: 0;
+	}
 
-    /* liste*/
+	/* liste*/
 .produit h2 {
-    padding-bottom: 2%;
-    text-align: center;
+	padding-bottom: 2%;
+	text-align: center;
 }
 .produit figure {
-    margin-left: 0;
-    float: left;
-    width: 40%;
+	margin-left: 0;
+	float: left;
+	width: 40%;
 }
 .produit figure img {
-    margin-left: 25%;
+	margin-left: 25%;
 }
 .produit figcaption {
-    float: right;
-    width: 60%;
+	float: right;
+	width: 60%;
 }
 .produit figcaption p {
-    padding-bottom: 10%;
-    padding-top: 5%;
-    text-align: right;
-    padding-right: 20%;
-    width: 90%;
+	padding-bottom: 10%;
+	padding-top: 5%;
+	text-align: right;
+	padding-right: 20%;
+	width: 90%;
 }
 .produit figcaption h3 {
-    color: #5A286C;
-    font-size: 24PX;
-    text-align: right;
-    padding-right: 30%;
+	color: #5A286C;
+	font-size: 24PX;
+	text-align: right;
+	padding-right: 30%;
 }
 .produit figcaption input {
-    border: solid 1px grey;
-    border-radius: 5px;
-    padding: 5px 10px;
+	border: solid 1px grey;
+	border-radius: 5px;
+	padding: 5px 10px;
 
 }
 .produit figcaption label {
-    display: inline-block;
-    margin-top: 3%;
-    margin-right: 2%;
-    margin-left: 30%;
+	display: inline-block;
+	margin-top: 3%;
+	margin-right: 2%;
+	margin-left: 30%;
 }
 .produit figcaption span {
-    color: #fff;
-    border-radius: 5Px;
-    margin-left: 10%;
-    background: #5A286C;
-    padding: 10px 20px;
+	color: #fff;
+	border-radius: 5Px;
+	margin-left: 10%;
+	background: #5A286C;
+	padding: 10px 20px;
 }
 .complementaire h2 {
-    padding-top: 5%;
-    text-align: center;
-    font-size: 24PX;
+	padding-top: 5%;
+	text-align: center;
+	font-size: 24PX;
 }
 .complementaire article {
-    float: left;
-    width: 30%;
-    margin-left: 3%;
+	float: left;
+	width: 30%;
+	margin-left: 3%;
 }
 
 .complementaire article figure img {
-    width: 75%;
+	width: 75%;
+}
+.recapitulatif .btn {
+	width: 70%;
+	padding-left: 40%;
+	padding-top: 25%;
+}
+
+/* formulaire */
+.formulaire {
+	width: 100%;
+   
+}
+.form {
+	padding-left: 20%;
+	width: 40%;
+	float: left;
+
+}
+.form input {
+	display: inherit;
+	padding: 10px 10px;
+	margin-top: 3%;
+}
+.formulaire .btn {
+	width: 30%;
+	padding-top: 10%;
+}
+.formulaire span {
+	margin-left: 100%;
+}
+.formulaire a {
+	color: #fff;
 }
 
 }
 
 @media screen and (min-width: 1000px) {
-    body {
-       
-        margin: 0 auto;
-    }
-    main {
-        max-width: 1200px;
-    }
-    header {
-        padding-top: 1%;
-    }
-    
-    .image, .navigation {
-        display: block;
-    }
-    .w100 .logo {
-        width: 25%;
-        height: 100px;
-    }
-    .w100 .w10 {
-        width: 46%;
-        float: left;
-    }
-    .w100 .image {
-        float: right;
-        width: 54%;
-    }
-    .image li {
-        display: inline-block;
-        margin: 0 9%;
-    }
-    .image img {
-        text-decoration: none;
-    }
-    .w100 .navigation {
-        float: right;
-        width: 54%;
-    }
-    .navigation li {
-        display: inline-block;
-        margin: 0 7%;
-    }
-    .navigation li a {
-        color: #5A286C;
-        font-size: 16px;
-        text-decoration: none;
-    }
-    .bg-menu {
-        display: none;
-    }
+	body {
+	   
+		margin: 0 auto;
+	}
+	main {
+		max-width: 1200px;
+	}
+	header {
+		padding-top: 1%;
+	}
+	
+	.image, .navigation {
+		display: block;
+	}
+	.w100 .logo {
+		width: 25%;
+		height: 100px;
+	}
+	.w100 .w10 {
+		width: 46%;
+		float: left;
+	}
+	.w100 .image {
+		float: right;
+		width: 54%;
+	}
+	.image li {
+		display: inline-block;
+		margin: 0 6.5%;
+	}
+	.image img {
+		text-decoration: none;
+	}
+	.w100 .navigation {
+		float: right;
+		width: 54%;
+	}
+	.navigation li {
+		display: inline-block;
+		margin: 0 7%;
+	}
+	.navigation li a {
+		color: #5A286C;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.bg-menu {
+		display: none;
+	}
 
-    .slider {
-        width: 100%;
-    }
-    /*filtre*/
-    .filtre {
-        display: block;
-    }
-    .filtre article {
-        float: left;
-        padding-top: 3%;
-        padding-left: 3%;
-    }
-    .filtre figure img {
-        width: 90%;
-        height: 350px;
-    }   
-    .filtre figcaption {
-        text-align: center;
-    }
-    .filtre figcaption h3 {
-        width: 98%;
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-    .filtre figcaption a {
-        font-size: 16px;
-        color: #5A286C;
-    }
-    /* nouveaute */
+	.slider {
+		width: 100%;
+	}
+	/*filtre*/
+	.filtre {
+		display: block;
+	}
+	.filtre article {
+		float: left;
+		padding-top: 3%;
+		padding-left: 3%;
+	}
+	.filtre figure img {
+		width: 90%;
+		height: 350px;
+	}   
+	.filtre figcaption {
+		text-align: center;
+	}
+	.filtre figcaption h3 {
+		width: 98%;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+	.filtre figcaption a {
+		font-size: 16px;
+		color: #5A286C;
+	}
+	/* nouveaute */
 
-    .nouveaute h2 {
-        padding-top: 3%;
-        text-align: center;
-        font-size: 24px;
-    }
-    .nouveaute article {
-        padding-left: 3%;
-        padding-top: 0;
-    } 
-    .nouveaute .nouv {
-        border-right: solid 2px #5A286C;
-        width: 33%;
-        float: left;
-    }
-    .nouveaute .right {
-        border-right: solid 2px #5A286C;
-        width: 33%;
-        float: left;
-    }
-    .nouveaute .nou {
-        border-right: inherit;
-        width: 33%;
-        float: left;
-    }
-    
-    .nouveaute article figcaption a {
-        padding-left: 55%;
-    }
-    .nouveaute .nou {
-        display: block;
-    }
+	.nouveaute h2 {
+		padding-top: 3%;
+		text-align: center;
+		font-size: 24px;
+	}
+	.nouveaute article {
+		padding-left: 3%;
+		padding-top: 0;
+	} 
+	.nouveaute .nouv {
+		border-right: solid 2px #5A286C;
+		width: 33%;
+		float: left;
+	}
+	.nouveaute .right {
+		border-right: solid 2px #5A286C;
+		width: 33%;
+		float: left;
+	}
+	.nouveaute .nou {
+		border-right: inherit;
+		width: 33%;
+		float: left;
+	}
+	
+	.nouveaute article figcaption a {
+		padding-left: 55%;
+	}
+	.nouveaute .nou {
+		display: block;
+	}
 
-    .nouveaute .nouv figure img {
-        width: 90%;
-        height: 180px;
-    }
-    .nouveaute .right figure img {
-        width: 90%;
-        height: 180px;
-    }
-    .nouveaute .nou figure {
-        padding-left: 10%;
-    }
-    .nouveaute .nou figure img {
-        width: 210px;
-        height: 185px;
-    }
-    .nouveaute figcaption a {
-        color: #5A286C;
-    }
-    
-    /*article*/
-    .article h2 {
-        padding-top: 3%;
-        text-align: center;
-        font-size: 24px;
-    }
-    .article article {
-        padding-left: 3%;
-        padding-top: 2%;
-    } 
-    .article .actus {
-    
-        width: 33%;
-        float: left;
-    }
-    
-    .article article figcaption a {
-        padding-left: 55%;
-    }
+	.nouveaute .nouv figure img {
+		width: 90%;
+		height: 180px;
+	}
+	.nouveaute .right figure img {
+		width: 90%;
+		height: 180px;
+	}
+	.nouveaute .nou figure {
+		padding-left: 10%;
+	}
+	.nouveaute .nou figure img {
+		width: 210px;
+		height: 185px;
+	}
+	.nouveaute figcaption a {
+		color: #5A286C;
+	}
+	
+	/*article*/
+	.article h2 {
+		padding-top: 3%;
+		text-align: center;
+		font-size: 24px;
+	}
+	.article article {
+		padding-left: 3%;
+		padding-top: 2%;
+	} 
+	.article .actus {
+	
+		width: 33%;
+		float: left;
+	}
+	
+	.article article figcaption a {
+		padding-left: 55%;
+	}
 
-    .article .actus figure img {
-        width: 80%;
-        height: 180px;
-    }
-    
-    .article figcaption a {
-        color: #5A286C;
-    }
+	.article .actus figure img {
+		height: 180px;
+	}
+	
+	.article figcaption a {
+		color: #5A286C;
+	}
 
 .portfolio-container,
 .portfolio-list {
-    width: 100%;
+	width: 100%;
 }
 
 .portfolio-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .portfolio-list li {
-    position: relative;
-    display: block;
-    float: left;
-    width: 32.5%;
+	position: relative;
+	display: block;
+	float: left;
+	width: 32.5%;
 }
 
 .portfolio-list li img {
-    display: block;
-    width: 100%;
-    margin: 0;
+	display: block;
+	width: 100%;
+	margin: 0;
 }
 /* liste*/
 .produit h2 {
-    padding-bottom: 3%;
-    text-align: center;
+	padding-bottom: 3%;
+	text-align: center;
 }
 .produit figure {
-    margin-left: 0;
-    float: left;
-    width: 50%;
+	margin-left: 0;
+	float: left;
+	width: 50%;
 }
 .produit figure img {
-    width: 60%;
+	width: 60%;
 }
 .produit figcaption {
-    float: right;
-    width: 50%;
+	float: right;
+	width: 50%;
 }
 .produit figcaption p {
-    padding-bottom: 5%;
-    padding-top: 3%;
-    text-align: right;
+	padding-bottom: 5%;
+	padding-top: 3%;
+	text-align: right;
 }
 .produit figcaption h3 {
-    color: #5A286C;
-    font-size: 24PX;
-    text-align: right;
-    padding-right: 20%;
+	color: #5A286C;
+	font-size: 24PX;
+	text-align: right;
 }
 .produit figcaption input {
-    border: solid 1px grey;
-    border-radius: 5px;
-    padding: 5px 10px;
+	border: solid 1px grey;
+	border-radius: 5px;
+	padding: 5px 10px;
 
 }
 .produit figcaption label {
-    display: inline-block;
-    margin-top: 3%;
-    margin-right: 2%;
+	display: inline-block;
+	margin-top: 3%;
+	margin-right: 2%;
 }
 .produit figcaption span {
-    color: #fff;
-    border-radius: 5Px;
-    margin-left: 30%;
-    background: #5A286C;
-    padding: 10px 20px;
+	color: #fff;
+	border-radius: 5Px;
+	margin-left: 30%;
+	background: #5A286C;
+	padding: 10px 20px;
 }
 .complementaire h2 {
-    text-align: center;
-    font-size: 24PX;
+	text-align: center;
+	font-size: 24PX;
 }
 .complementaire article {
-    float: left;
-    width: 30%;
-    margin-left: 3%;
+	float: left;
+	width: 30%;
+	margin-left: 3%;
 }
 
 .complementaire article figure img {
-    width: 65%;
+	width: 65%;
+}
+
+/* panier*/
+.commande {
+	margin-left: 5%;
+}
+.commande h2 {
+	text-align: center;
+	font-size: 24px;
+}
+.commande article {
+	padding-top: 4%;
+}
+.com {
+	height: 130px;
+}
+.com ul li {
+	width: 20%;
+	list-style: none;
+	float: left;
+}
+.com ul li img {
+	width: 50%;
+}
+
+.recapitulatif h2 {
+	text-align: center;
+	font-size: 24px;
+}
+.recapitulatif .recap {
+	width: 100%;
+	padding-top: 3%;
+	padding-left: 20%;
+}
+.recap .recap-nom {
+	float: left;
+	text-transform: uppercase;
+	width: 50%;
+}
+.recapitulatif .btn {
+	width: 70%;
+	padding-left: 45%;
+	padding-top: 23%;
+}
+.recap .recap-chiffre {
+	float: right;
+	width: 50%;
+	padding-right: 25%;
+	text-align: right;
+}
+.recap .recap-chiffre li {
+	padding-top: 10%;
+}
+.recap li {
+	padding-top: 5%;
+	list-style: none;
+}
+.recapitulatif span {
+	padding: 10px 20px;
+	background: #5A286C;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+/* formulaire */
+.formulaire {
+	width: 100%;
+   
+}
+.form {
+	padding-left: 20%;
+}
+.form label {
+	font-size: 18Px;
+}
+.form input {
+	display: inherit;
+	padding: 15px 20px;
+	margin-top: 3%;
+}
+.formulaire .btn {
+	width: 30%;
+	padding-top: 10%;
+}
+.formulaire span {
+	margin-left: 140%;
+	background: #5A286C;
+	padding: 15px 40px;
+	border-radius: 5px;
 }
 
 
-    /*---------------- footer ---------------*/
+	/*---------------- footer ---------------*/
 
-    footer {
-        background: #000;
-        width: 100%;
-    }
+	footer {
+		background: #000;
+		width: 100%;
+	}
 
-    footer .foo {
-        width: 100%;
-        margin: 0 auto;
-        height: 100px;
-    }
+	footer .foo {
+		width: 100%;
+		margin: 0 auto;
+		height: 100px;
+	}
 
-    footer .foo div {
-        float: left;
-        margin-left: 10%;
-        margin-top: 1%;
-    }
+	footer .foo div {
+		float: left;
+		margin-left: 10%;
+		margin-top: 1%;
+	}
 
-    footer .foo div a {
-        display: block;
-        padding-top: 2%;
-        text-align: left;
-        color: #fff;
-        text-decoration: none;
-    }
+	footer .foo div a {
+		display: block;
+		padding-top: 2%;
+		text-align: left;
+		color: #fff;
+		text-decoration: none;
+	}
 
-    footer .foo div:last-child a {
-        display: inline;
-    }
+	footer .foo div:last-child a {
+		display: inline;
+	}
 
 
 }
